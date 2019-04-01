@@ -61,16 +61,16 @@ func setupListeners() {
 }
 </pre>
 
-Implement the <i>createChannel</i> function to determine what happens networking-wise when a user creates a new channel:
+Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
 <pre>
-func createChannel() {   
+func profileButtonPressed() {   
     
 }
 </pre>
 
-Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
+Implement the <i>createChannel</i> function to determine what happens networking-wise when a user creates a new channel:
 <pre>
-func profileButtonPressed() {   
+func createChannel() {   
     
 }
 </pre>
@@ -133,14 +133,6 @@ Implement the <i>save</i> function to save a message being sent in the database:
 func save(_ message: Message) {   
     
 }
-</pre>
-
-Implement the <i>handleDocumentChange</i> function to sync the local store of messages with a change in the message collection in the database:
-<pre>
-func handleDocumentChange(_ change: DocumentChange) {   
-    
-}
-</pre>
 
 Implement the <i>loadMessageAsPhoto</i> function to determine how to load a photo as a message:
 <pre>
@@ -233,13 +225,6 @@ func profileButtonPressed() {
 Implement the <i>save</i> function to save a message being sent in the database:
 <pre>
 func save(_ message: Message) {   
-    
-}
-</pre>
-
-Implement the <i>handleDocumentChange</i> function to sync the local store of messages with a change in the message collection in the database:
-<pre>
-func handleDocumentChange(_ change: DocumentChange) {   
     
 }
 </pre>
