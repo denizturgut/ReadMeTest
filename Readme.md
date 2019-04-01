@@ -38,10 +38,12 @@ A class that consists of chat conversation functions. The two classes below subc
 <b>ProfileViewController</b>:
 Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
 
-For handling of profile image uploads, subclass ProfileViewController.swift and implement protocol <i>ProfileVCDelegate</i> with the necessary networking functions:
+For handling of profile image uploads, subclass ProfileViewController.swift and implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 
 <pre>
-func uploadImage(image: UIImage, data: Data)
+func uploadImage(image: UIImage, data: Data){
+
+}
 </pre>
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img2.png)
