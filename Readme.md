@@ -26,7 +26,6 @@ Banff framework includes support for six different types of chat screens. These 
 ## Using
 As mentioned above, there are certain functions that must be implemented when subclassing a chat screen, which would otherwise present a fatal error during runtime. Additionally, you will have to add your own convenience functions that relate to any network calls for data submission/retrieval. Subclass the classes below and implement the abstract functions specified:
 
-
 <b>SignInViewController</b>:
 Provides an entry screen to the chat app intended to authorize and sign a user in.
 
@@ -37,7 +36,6 @@ Implement the <i>uploadImage</i> function with the necessary networking logic to
 func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
-
 <b>RoomsTableViewController.swift</b>: 
 This screen is meant to provide list of channels and direct message conversations that the user can navigate to by tapping.
 
@@ -47,7 +45,6 @@ Implement the <i>uploadImage</i> function with the necessary networking logic to
 <pre>
 func uploadImage(image: UIImage, data: Data){   }
 </pre>
-
 
 <b>ChatViewController.swift</b>:
 A class that consists of chat conversation functions. The two classes below subclass this class, each functioning as its own type of chat conversation screen.
@@ -60,7 +57,6 @@ Implement the <i>uploadImage</i> function with the necessary networking logic to
 func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
-
 2) <b>DirectMessageViewController.swift</b>, which handles one to one chat conversations.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
@@ -69,7 +65,6 @@ Implement the <i>uploadImage</i> function with the necessary networking logic to
 <pre>
 func uploadImage(image: UIImage, data: Data){   }
 </pre>
-
 
 <b>ProfileViewController</b>:
 Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
