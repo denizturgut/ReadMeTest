@@ -76,11 +76,6 @@ Implement the <i>uploadImage</i> function with the necessary networking logic to
 func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
-Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
-<pre>
-func uploadImage(image: UIImage, data: Data){   }
-</pre>
-
 ## Firebase Firestore Example
 
 Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS.
