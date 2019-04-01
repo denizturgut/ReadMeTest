@@ -1,5 +1,5 @@
 # BL202-Prototype
-Banff is a chat engine framework which will be used in future projects that require chat capabilities. It utilizes the MessageKit framework for managment of messaging. This project is built and used with CocoaPods. 
+Banff is a chat engine framework which will be used in future projects that require chat capabilities. It utilizes the MessageKit framework for managment of messaging. This project is built and used with CocoaPods. Banff supports Swift 4.2
 
 The example iOS App demonstrates how to use this framework with Firebase Cloud Firestore. To run the iOS app, simply open the 'Banff.xcworkspace' project file and specify the 'BanffFirebaseExample-iOS' target, as well as your desired device. Hit the run button to build and run the app!
 
@@ -49,16 +49,9 @@ This screen is meant to provide list of channels and direct message conversation
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
-Implement the <i>setupListeners</i> function to listen for changes in your channel and direct message collection data in your database. Setup listeners for each of these collections:
+Implement the <i>setupListeners</i> function to listen for changes in your channel and direct message conversation database collection data. Setup listeners for each of these collections:
 <pre>
 func setupListeners() {   
-    
-}
-</pre>
-
-Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
-<pre>
-func profileButtonPressed() {   
     
 }
 </pre>
@@ -66,6 +59,13 @@ func profileButtonPressed() {
 Implement the <i>createChannel</i> function to determine what happens networking-wise when a user creates a new channel:
 <pre>
 func createChannel() {   
+    
+}
+</pre>
+
+Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
+<pre>
+func profileButtonPressed() {   
     
 }
 </pre>
@@ -95,9 +95,79 @@ A class that consists of chat conversation functions. The two classes below subc
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png) 
 
-Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
+Implement the <i>setupMessagesListener</i> function to listen for changes in your channel conversation database collection data.
 <pre>
-func uploadImage(image: UIImage, data: Data) {   
+func setupMessagesListener() {   
+    
+}
+</pre>
+
+Implement the <i>setupRecipientProfileImageListener</i> function to listen for changes in the channel's image database document data.
+<pre>
+func setupRecipientProfileImageListener() {   
+    
+}
+</pre>
+
+Implement the <i>addNewMessageToRecipientChatThread</i> function with the necessary networking logic to upload to your database:
+<pre>
+func addNewMessageToRecipientChatThread(message: Message) {   
+
+}
+</pre>
+
+Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
+<pre>
+func profileButtonPressed() {   
+    
+}
+</pre>
+
+Implement the <i>save</i> function to save a message being sent in the database:
+<pre>
+func save(_ message: Message) {   
+    
+}
+</pre>
+
+Implement the <i>handleDocumentChange</i> function to sync the local store of messages with a change in the message collection in the database:
+<pre>
+func handleDocumentChange(_ change: DocumentChange) {   
+    
+}
+</pre>
+
+Implement the <i>loadMessageAsPhoto</i> function to determine how to load a photo as a message:
+<pre>
+func loadMessageAsPhoto(image: UIImage, url: URL) -> Message? {   
+    
+}
+</pre>
+
+Implement the <i>sendMessage</i> function to create a message object with the user's data and message text:
+<pre>
+func sendMessage(text: String) {   
+    
+}
+</pre>
+
+Implement the <i>sendPhotoAsAssetWithSize</i> function with the necessary networking logic to prepare an image in a safe to upload manner to be uploaded to your database:
+<pre>
+func sendPhotoAsAssetWithSize(asset: PHAsset, size: CGSize) {   
+    
+}
+</pre>
+
+Implement the <i>downloadImage</i> function with the necessary networking logic to download a photo message's image data from the database:
+<pre>
+func downloadImage(at url: URL, completion: @escaping (UIImage?) -> Void)) {   
+    
+}
+</pre>
+
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your photo message's image data to the database:
+<pre>
+func uploadImage(image: UIImage, to chat: Chat, completion: @escaping (URL?) -> Void) {   
     
 }
 </pre>
@@ -106,10 +176,101 @@ func uploadImage(image: UIImage, data: Data) {
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
-Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
+Implement the <i>setupMessagesListener</i> function to listen for changes in your direct message conversation database collection data.
 <pre>
-func uploadImage(image: UIImage, data: Data) {   
+func setupMessagesListener() {   
+    
+}
+</pre>
 
+Implement the <i>setupRecipientProfileImageListener</i> function to listen for changes in the receipient's image database document data.
+<pre>
+func setupRecipientProfileImageListener() {   
+    
+}
+</pre>
+
+Implement the <i>setupRecipientListeners</i> function to listen for changes in the recipient's conversation database collection data, as well as their status database collection data.
+<pre>
+func setupRecipientListeners() {   
+    
+}
+</pre>
+
+Implement the <i>addNewMessageToRecipientChatThread</i> function with the necessary networking logic to upload to your database:
+<pre>
+func addNewMessageToRecipientChatThread(message: Message) {   
+
+}
+</pre>
+
+Implement the <i>updateRecipientStatusInMyDb</i> function with the necessary networking logic to upload to your database:
+<pre>
+func updateRecipientStatusInMyDb(chatUserStatus: inout ChatUserStatus, value: Bool) {   
+
+}
+</pre>
+
+Implement the <i>updateMyStatusInRecipientsDb</i> function with the necessary networking logic to upload to your database:
+<pre>
+func updateMyStatusInRecipientsDb(chatUserStatus: inout ChatUserStatus, value: Bool) {   
+
+}
+</pre>
+
+Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
+<pre>
+func profileButtonPressed() {   
+    
+}
+</pre>
+
+Implement the <i>save</i> function to save a message being sent in the database:
+<pre>
+func save(_ message: Message) {   
+    
+}
+</pre>
+
+Implement the <i>handleDocumentChange</i> function to sync the local store of messages with a change in the message collection in the database:
+<pre>
+func handleDocumentChange(_ change: DocumentChange) {   
+    
+}
+</pre>
+
+Implement the <i>loadMessageAsPhoto</i> function to determine how to load a photo as a message:
+<pre>
+func loadMessageAsPhoto(image: UIImage, url: URL) -> Message? {   
+    
+}
+</pre>
+
+Implement the <i>sendMessage</i> function to create a message object with the user's data and message text:
+<pre>
+func sendMessage(text: String) {   
+    
+}
+</pre>
+
+Implement the <i>sendPhotoAsAssetWithSize</i> function with the necessary networking logic to prepare an image in a safe to upload manner to be uploaded to your database:
+<pre>
+func sendPhotoAsAssetWithSize(asset: PHAsset, size: CGSize) {   
+    
+}
+</pre>
+
+Implement the <i>downloadImage</i> function with the necessary networking logic to download a photo message's image data from the database:
+<pre>
+func downloadImage(at url: URL, completion: @escaping (UIImage?) -> Void)) {   
+    
+}
+</pre>
+
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your photo message's image data to the database:
+<pre>
+func uploadImage(image: UIImage, to chat: Chat, completion: @escaping (URL?) -> Void) {   
+    
 }
 </pre>
 
