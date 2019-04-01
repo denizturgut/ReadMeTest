@@ -2,6 +2,7 @@
 Banff is a chat engine framework which will be used in future projects that require chat capabilities. It utilizes the MessageKit framework for managment of messaging. This project is built and used with CocoaPods. 
 
 The example iOS App demonstrates how to use this framework with Firebase Cloud Firestore. To run the iOS app, simply open the 'Banff.xcworkspace' project file and specify the 'BanffFirebaseExample-iOS' target, as well as your desired device. Hit the run button to build and run the app!
+
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png) 
 
 ## Installation
