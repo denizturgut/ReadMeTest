@@ -19,24 +19,32 @@ Add <i>Banff.framework</i> to the 'Embedded Binaries' section of your project se
 Coming soon!
 
 ## Description
-Banff framework includes support for six different types of chat screens. These screens are comprimised mainly of chat features and functions. While Swift does not natively support "Abstract" classes, these classes have been designed to be implemented in just this way; to be subclassed and by requirement, implement certain functions (with runtime fatal errors occurring otherwise). 
+Banff framework includes support for six different types of chat screens. These screens are templates that are comprimised mainly of chat features and functions, and are fully customizable user interface-wise. While Swift does not natively support "Abstract" classes, these classes have been designed to be implemented in just this way; to be subclassed and by requirement, implement certain functions (with runtime fatal errors occurring otherwise). Aditionally, there are various extensions that provide convenience functions that are used within the framework classes, as well as a User settings singleton which stores the user's data and is accesible throught the framework and the app using it.
 
 ## Using
-As mentioned above, there are certain functions that must be implemented when subclassing a chat screen, which would otherwise present a fatal error during runtime.
+As mentioned above, there are certain functions that must be implemented when subclassing a chat screen, which would otherwise present a fatal error during runtime. Additionally, you will have to add your own convenience functions that relate to any network calls for data submission/retrieval. The example provided with this project demonstrates this using Google's Firebase Firestore platform.
 
 <b>SignInViewController</b>:
 Provides an entry screen to the chat app intended to authorize and sign a user in.
 
+![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
+
 <b>RoomsTableViewController.swift</b>: 
-This screen is meant to list channels and direct message conversations that the user can partake in:
+This screen is meant to provide list of channels and direct message conversations that the user can navigate to by tapping.
+
+![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
 <b>ChatViewController.swift</b>:
 A class that consists of chat conversation functions. The two classes below subclass this class, each functioning as its own type of chat conversation screen.
 1) <b>ChannelViewController.swift</b>, which is meant to handle group conversations. 
 2) <b>DirectMessageViewController.swift</b>, which handles one to one chat conversations.
 
+![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
+
 <b>ProfileViewController</b>:
 Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
+
+![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
 For handling of profile image uploads, subclass ProfileViewController.swift and implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 
@@ -46,17 +54,9 @@ func uploadImage(image: UIImage, data: Data){
 }
 </pre>
 
-![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img2.png)
-</br>Also, you can change a <i>saturation</i>, a <i>brightness</i> and <i>alpha</i> values.
-</br>And control has customization. You can customize the label:</br>
-![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img3.png)
-</br>Or appearance:</br>
-</br>
-![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
-
 ## Firebase Firestore Example
 
-Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS
+Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS.
 
 ## License
 
