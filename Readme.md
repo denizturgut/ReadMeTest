@@ -6,12 +6,12 @@ The example iOS App demonstrates how to use this framework with Firebase Cloud F
 ## Installation
 
 ### CocoaPods
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Banff into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
+<pre>
 pod 'Banff', :git => 'https://github.com/iggytheiguana/BL202-Prototype', :tag => '0.1.0'
-```
+</pre>
+
 ### Manual
 Add <i>Banff.framework</i> to the 'Embedded Binaries' section of your project settings.
 
@@ -27,13 +27,16 @@ As mentioned above, there are certain functions that must be implemented when su
 <b>SignInViewController</b>:
 Provides an entry screen to the chat app intended to authorize and sign a user in.
 
+
 <b>RoomsTableViewController.swift</b>: 
 This screen is meant to list channels and direct message conversations that the user can partake in:
+
 
 <b>ChatViewController.swift</b>:
 A class that consists of chat conversation functions. The two classes below subclass this class, each functioning as its own type of chat conversation screen.
 1) <b>ChannelViewController.swift</b>, which is meant to handle group conversations. 
 2) <b>DirectMessageViewController.swift</b>, which handles one to one chat conversations.
+
 
 <b>ProfileViewController</b>:
 Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
