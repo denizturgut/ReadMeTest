@@ -23,7 +23,12 @@ Coming soon!
 ## Description
 Banff framework includes support for six different types of chat screens. These screens are templates that are comprimised mainly of chat features and functions, and are fully customizable user interface-wise. While Swift does not natively support "Abstract" classes, these classes have been designed to be implemented in just this way; to be subclassed and by requirement, implement certain functions (with runtime fatal errors occurring otherwise). Aditionally, there are various extensions that provide convenience functions that are used within the framework classes, as well as a User settings singleton which stores the user's data and is accesible throught the framework and the app using it, which are also customizable through extension.
 
-## Using
+## Firebase Firestore Example
+
+Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS.
+
+## Using Banff
+
 As mentioned above, there are certain functions that must be implemented when subclassing a chat screen, which would otherwise present a fatal error during runtime. Additionally, you will have to add your own convenience functions that relate to any network calls for data submission/retrieval. Subclass/extend the classes below and implement the abstract functions specified:
 
 <b>Chat</b>:
@@ -273,10 +278,6 @@ func uploadImage(image: UIImage, to chat: Chat, completion: @escaping (URL?) -> 
     
 }
 </pre>
-
-## Firebase Firestore Example
-
-Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS.
 
 ## License
 
