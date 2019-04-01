@@ -29,16 +29,18 @@ As mentioned above, there are certain functions that must be implemented when su
 Provides an entry screen to the chat app intended to authorize and sign a user in.
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){ }
+func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
 <b>RoomsTableViewController.swift</b>: 
 This screen is meant to provide list of channels and direct message conversations that the user can navigate to by tapping.
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){ }
+func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
 <b>ChatViewController.swift</b>:
@@ -46,24 +48,31 @@ A class that consists of chat conversation functions. The two classes below subc
 1) <b>ChannelViewController.swift</b>, which is meant to handle group conversations. 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png) 
 
-2) <b>DirectMessageViewController.swift</b>, which handles one to one chat conversations.
-![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png) 
-
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){ }
+func uploadImage(image: UIImage, data: Data){   }
+</pre>
+
+2) <b>DirectMessageViewController.swift</b>, which handles one to one chat conversations.
+![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
+
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
+<pre>
+func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
 <b>ProfileViewController</b>:
 Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){ }
+func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
-For handling of profile image uploads, subclass ProfileViewController.swift and implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){ }
+func uploadImage(image: UIImage, data: Data){   }
 </pre>
 
 ## Firebase Firestore Example
