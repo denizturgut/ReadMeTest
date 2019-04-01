@@ -62,7 +62,6 @@ func uploadImage(image: UIImage, data: Data){ }
 </pre>
 
 For handling of profile image uploads, subclass ProfileViewController.swift and implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
-
 <pre>
 func uploadImage(image: UIImage, data: Data){ }
 </pre>
