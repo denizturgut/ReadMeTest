@@ -77,15 +77,8 @@ Optional: Implement the <i>signOutButtonPressed</i> function to determine what h
 }
 </pre>
 
-Implement the <i>addChatToTable</i> function to listen for changes in your channel and direct message collection data in your database. Setup listeners for each of these collections:
-<pre>
-func addChatToTable() {   
-    
-}
-</pre>
-
 <b>ProfileViewController</b>:
-Contains the necessary functions of a profile page, which allows users to change their profile picture in a profile setting, while in channel info setting, allow a user to change the image of a channel.
+Contains the necessary functions of a profile page, which allows a user to change their profile picture in a profile setting, or a channel image in a channel info setting.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
