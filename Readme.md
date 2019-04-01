@@ -56,16 +56,23 @@ func setupListeners() {
 }
 </pre>
 
-Optional: Implement the <i>profileButtonPressed</i> function to determine how your profile screen should be presented:
+Optional: Implement the <i>profileButtonPressed</i> function to determine how a user's profile screen should be presented:
 <pre>
 func profileButtonPressed() {   
     
 }
 </pre>
 
-Implement the <i>createChannel</i> function to determine what happens networking-wise when you create a new channel:
+Implement the <i>createChannel</i> function to determine what happens networking-wise when a user creates a new channel:
 <pre>
 func createChannel() {   
+    
+}
+</pre>
+
+Optional: Implement the <i>signOutButtonPressed</i> function to determine what happens networking-wise when a user signs out of the app:
+<pre>
+@IBAction func signOutButtonPressed(_ sender: Any) {   
     
 }
 </pre>
@@ -82,7 +89,7 @@ Contains the necessary functions of a profile page, which allows users to change
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftHUEColorPicker/master/img/img4.png)
 
-Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
+Implement the <i>uploadImage</i> function with the necessary networking logic to upload an image to your database:
 <pre>
 func uploadImage(image: UIImage, data: Data) {   
     
