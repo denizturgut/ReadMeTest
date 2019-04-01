@@ -39,7 +39,7 @@ Provides an entry screen to the chat app intended to authorize and sign a user i
 
 Implement the <i>authorizeUser</i> function with the database authorization logic to sign the user in. The name passed to the function will be stored in your database and become associated with a user id, and will be added to App Settings store to be used within the app:
 <pre>
-func authorizeUser(name: String){   
+func authorizeUser(name: String) {   
     
 }
 </pre>
@@ -51,28 +51,28 @@ This screen is meant to provide list of channels and direct message conversation
 
 Implement the <i>setupListeners</i> function to listen for changes in your channel and direct message collection data in your database. Setup listeners for each of these collections:
 <pre>
-func setupListeners(){   
+func setupListeners() {   
     
 }
 </pre>
 
 Optional: Implement the <i>profileButtonPressed</i> function to determine how your profile screen should be presented:
 <pre>
-func profileButtonPressed(){   
+func profileButtonPressed() {   
     
 }
 </pre>
 
 Implement the <i>createChannel</i> function to determine what happens networking-wise when you create a new channel:
 <pre>
-func createChannel(){   
+func createChannel() {   
     
 }
 </pre>
 
 Implement the <i>addChatToTable</i> function to listen for changes in your channel and direct message collection data in your database. Setup listeners for each of these collections:
 <pre>
-func addChatToTable(){   
+func addChatToTable() {   
     
 }
 </pre>
@@ -84,7 +84,7 @@ Contains the necessary functions of a profile page, which allows users to change
 
 Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){   
+func uploadImage(image: UIImage, data: Data) {   
     
 }
 </pre>
@@ -97,7 +97,7 @@ A class that consists of chat conversation functions. The two classes below subc
 
 Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){   
+func uploadImage(image: UIImage, data: Data) {   
     
 }
 </pre>
@@ -108,7 +108,7 @@ func uploadImage(image: UIImage, data: Data){
 
 Implement the <i>uploadImage</i> function with the necessary networking logic to upload to your database:
 <pre>
-func uploadImage(image: UIImage, data: Data){   
+func uploadImage(image: UIImage, data: Data) {   
 
 }
 </pre>
