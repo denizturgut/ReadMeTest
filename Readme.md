@@ -25,7 +25,7 @@ Banff framework includes support for six different types of chat screens. These 
 
 ## Firebase Firestore Example
 
-Please see the Firebase implementation example of <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS.
+Please see the example app utlizing <i>Banff Framework</i> in the base folder of this repository; BanffFirebaseExample-iOS. It leverages Google's Firebase Firestore for data persistence.
 
 ## Using Banff
 
